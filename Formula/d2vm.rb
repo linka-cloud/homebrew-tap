@@ -5,13 +5,13 @@
 class D2vm < Formula
   desc "Build Virtual Machine Image from Dockerfile or Docker image"
   homepage "https://github.com/linka-cloud/d2vm"
-  version "0.1.0-rc4"
+  version "0.1.0"
   license "Apache License 2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/linka-cloud/d2vm/releases/download/v0.1.0-rc4/d2vm_v0.1.0-rc4_darwin_arm64.tar.gz"
-      sha256 "746df4506c6fd0c35107d1096b1ec12e303be807ab843ef2af6f7eeef3d24f00"
+      url "https://github.com/linka-cloud/d2vm/releases/download/v0.1.0/d2vm_v0.1.0_darwin_arm64.tar.gz"
+      sha256 "42d1c85efbf5b65a2e44fc8f8514778169cade775db62e4ed7a3023ad9784e8e"
 
       def install
         bin.install "d2vm"
@@ -21,8 +21,8 @@ class D2vm < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/linka-cloud/d2vm/releases/download/v0.1.0-rc4/d2vm_v0.1.0-rc4_darwin_amd64.tar.gz"
-      sha256 "8be2172020c7cd0554389675ef432fc0856fc043585503d1b508863b401e35c8"
+      url "https://github.com/linka-cloud/d2vm/releases/download/v0.1.0/d2vm_v0.1.0_darwin_amd64.tar.gz"
+      sha256 "84fb3a5c5750f9f0f198f75d787a71b885bc2f4357be4bf1de694e743f83b548"
 
       def install
         bin.install "d2vm"
@@ -35,8 +35,8 @@ class D2vm < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/linka-cloud/d2vm/releases/download/v0.1.0-rc4/d2vm_v0.1.0-rc4_linux_arm64.tar.gz"
-      sha256 "d218066e6d4e633ce19b6b985db21cb36c6653aa43237ecde3417725da76474c"
+      url "https://github.com/linka-cloud/d2vm/releases/download/v0.1.0/d2vm_v0.1.0_linux_arm64.tar.gz"
+      sha256 "c8955d7a11fb71541938a374745ade1cf927ec6f611d766c7bf6884bc284ce84"
 
       def install
         bin.install "d2vm"
@@ -46,8 +46,8 @@ class D2vm < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/linka-cloud/d2vm/releases/download/v0.1.0-rc4/d2vm_v0.1.0-rc4_linux_amd64.tar.gz"
-      sha256 "c586efbeb59d60e5ee8a5c2d2e4794945c1311a9922d253cff5ae01d1e210609"
+      url "https://github.com/linka-cloud/d2vm/releases/download/v0.1.0/d2vm_v0.1.0_linux_amd64.tar.gz"
+      sha256 "3417f24113ca1e71b63f59242703483fcd8a094fbe82d709ef40c113c4b0608e"
 
       def install
         bin.install "d2vm"
