@@ -11,7 +11,7 @@ class Lkar < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/linka-cloud/artifact-registry/releases/download/v0.0.0/lkar_Darwin_aarch64.tar.gz"
-      sha256 "4f5fc22ef1cf4bfa1e53be65c4e28ce63dc255532d17b9985e2d7a436570b0e4"
+      sha256 "954ca4900f5533ad07be6034ec4f21adedeb17ebfa9baa761978e3f02ce84e80"
 
       def install
         bin.install "lkar"
@@ -22,7 +22,7 @@ class Lkar < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/linka-cloud/artifact-registry/releases/download/v0.0.0/lkar_Darwin_x86_64.tar.gz"
-      sha256 "1c994a01e58d9432671abc4a2aa74082f9cf45a642a08cf886d67d6ed89f31f7"
+      sha256 "7ddd581ab0ddbac5d9281b90de4c6fb46d81221a9f0860cf414545ea4e4d1e5e"
 
       def install
         bin.install "lkar"
@@ -36,7 +36,7 @@ class Lkar < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/linka-cloud/artifact-registry/releases/download/v0.0.0/lkar_Linux_aarch64.tar.gz"
-      sha256 "3914704c3a287cd92c28fd4da54204d273d61bdc6b77ac9577f055b1242850c1"
+      sha256 "ae681c5acee3ebd33a331cd0c47a5f6d8cde11bc257486f79fbf2f8e33eccb22"
 
       def install
         bin.install "lkar"
@@ -47,7 +47,7 @@ class Lkar < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/linka-cloud/artifact-registry/releases/download/v0.0.0/lkar_Linux_x86_64.tar.gz"
-      sha256 "1dee736b3b84f266e2d0645196d30b42ecff4a8d3185b35f783ca8d201fdaad9"
+      sha256 "a850c585f5d60b0805a3d67f0a87c361603a31a7ad2eff689720c43926d9a26c"
 
       def install
         bin.install "lkar"
