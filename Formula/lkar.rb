@@ -5,13 +5,13 @@
 class Lkar < Formula
   desc "Distribute your artifacts to your end users without any additional administration or maintenance costs."
   homepage "https://github.com/linka-cloud/artifact-registry"
-  version "0.0.0"
+  version "0.1.0"
   license "Apache 2.0 and MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/linka-cloud/artifact-registry/releases/download/v0.0.0/lkar_Darwin_aarch64.tar.gz"
-      sha256 "954ca4900f5533ad07be6034ec4f21adedeb17ebfa9baa761978e3f02ce84e80"
+      url "https://github.com/linka-cloud/artifact-registry/releases/download/v0.1.0/lkar_Darwin_aarch64.tar.gz"
+      sha256 "b4d1160030a1879d195db972bbe20e25e85c0f05a308d1fe80a26223b07a6d1e"
 
       def install
         bin.install "lkar"
@@ -21,8 +21,8 @@ class Lkar < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/linka-cloud/artifact-registry/releases/download/v0.0.0/lkar_Darwin_x86_64.tar.gz"
-      sha256 "7ddd581ab0ddbac5d9281b90de4c6fb46d81221a9f0860cf414545ea4e4d1e5e"
+      url "https://github.com/linka-cloud/artifact-registry/releases/download/v0.1.0/lkar_Darwin_x86_64.tar.gz"
+      sha256 "d7c5102e8a998b689e3bf55f02d100b534508b757436b0013c4bfd6c64e19746"
 
       def install
         bin.install "lkar"
@@ -35,8 +35,8 @@ class Lkar < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/linka-cloud/artifact-registry/releases/download/v0.0.0/lkar_Linux_aarch64.tar.gz"
-      sha256 "ae681c5acee3ebd33a331cd0c47a5f6d8cde11bc257486f79fbf2f8e33eccb22"
+      url "https://github.com/linka-cloud/artifact-registry/releases/download/v0.1.0/lkar_Linux_aarch64.tar.gz"
+      sha256 "56261ec42a3568e110801dd3d8f8f3244fcdcfdfdf399bf381d6649c39ab7732"
 
       def install
         bin.install "lkar"
@@ -46,8 +46,8 @@ class Lkar < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/linka-cloud/artifact-registry/releases/download/v0.0.0/lkar_Linux_x86_64.tar.gz"
-      sha256 "a850c585f5d60b0805a3d67f0a87c361603a31a7ad2eff689720c43926d9a26c"
+      url "https://github.com/linka-cloud/artifact-registry/releases/download/v0.1.0/lkar_Linux_x86_64.tar.gz"
+      sha256 "176a71927ee1d61885e4fde62f5c0b5b134d78107c06fc1974810ad193da9c97"
 
       def install
         bin.install "lkar"
